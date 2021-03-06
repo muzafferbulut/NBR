@@ -29,9 +29,9 @@ def BurnLevel(pix): # determine burn level
 bandNIR = 5 # for landsat 8 
 bandSWIR = 6 # for landsat 8
 
-time1 = rasterio.open("time1.tif").read() # read time1 file
+time1 = rasterio.open("time1.tif").read() # read image before the fire
 
-time2 = rasterio.open("time2.tif").read() # read time 2 file
+time2 = rasterio.open("time2.tif").read() # read image after the fire
 
 time1NBR = NBR(time1, bandNIR, bandSWIR) # time1 NBR
 
